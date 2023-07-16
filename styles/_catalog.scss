@@ -1,0 +1,12 @@
+.catalogs {
+	background-color: $primaryColor;
+	li {
+		a {
+			color: $white;
+			text-transform: capitalize;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
