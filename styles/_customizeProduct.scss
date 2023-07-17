@@ -3,6 +3,32 @@
 	color: $secondaryColor;
 }
 
+.grid-patterns {
+	button {
+		background-color: transparent;
+	}
+}
+.switcher {
+	margin-left: 0 !important;
+	li {
+		padding-left: 0 !important;
+	}
+	.uk-active {
+		a {
+			background-color: $primaryColor !important;
+		}
+	}
+	&-title {
+		line-height: 25px !important;
+		padding: 10px 30px !important;
+		letter-spacing: 2px;
+		font-size: 1.1rem !important;
+		i {
+			line-height: 30px;
+		}
+	}
+}
+
 $colors: (
 	"red": #db2828,
 	"orange": #f2711c,
@@ -26,7 +52,7 @@ input[type="radio"] {
 		}
 		@each $name, $value in $colors {
 			.#{$name} {
-				border: 2px solid black;
+				border: 1px solid black;
 			}
 		} // !@each
 	} // !&:checked + label
